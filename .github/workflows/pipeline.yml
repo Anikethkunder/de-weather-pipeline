@@ -1,0 +1,55 @@
+name: Weather ETL Pipeline
+
+on:
+  schedule:
+    - cron: "10 * * * *"
+  workflow_dispatch:
+    inputs:
+      inject_fault:
+        description: "Demo: inject a fault"
+        type: choice
+        default: none
+        options: [none, extract, bad_data]
+      hold_seconds:
+        description: "Demo: keep the run IN PROGRESS for N seconds"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weather-etl
+  cancel-in-progress: false
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Hold (demo only)
+        env:
+          HOLD: ${{ github.event.inputs.hold_seconds }}
+        run: sleep "${HOLD:-0}"
+
+      - name: Run pipeline
+        env:
+          INJECT_FAULT: ${{ github.event.inputs.inject_fault }}
+        run: python pipeline.py
+
+      - name: Save warehouse and reports
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add warehouse reports
+          git commit -m "ETL run ${{ github.run_id }}" || exit 0
+          git pull --rebase
+          git push
