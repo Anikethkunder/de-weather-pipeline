@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:50:15+00:00",
+ "generated_at": "2026-10-21T06:57:22+00:00",
  "cities": [
   {
    "city": "Bengaluru",
@@ -42,7 +42,7 @@
    "humidity_pct": 40.0,
    "precip_mm": 0.0,
    "wind_kmh": 10.4,
-   "condition": "Partly cloudy",
+   "condition": "Overcast",
    "comfort": "Hot"
   },
   {
