@@ -942,5 +942,123 @@
   "status": "success",
   "finished_at": "2026-10-22T11:40:00+00:00",
   "duration_s": 4.99
+ },
+ {
+  "run_id": "39819333719",
+  "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/39819333719",
+  "trigger": "schedule",
+  "fault_injected": "",
+  "started_at": "2026-10-22T17:03:43+00:00",
+  "stages": [
+   {
+    "name": "extract",
+    "rows_out": 6,
+    "detail": "6 API calls",
+    "status": "success",
+    "duration_s": 1.42
+   },
+   {
+    "name": "transform",
+    "rows_in": 6,
+    "rows_out": 6,
+    "status": "success",
+    "duration_s": 0.0
+   },
+   {
+    "name": "quality",
+    "rows_in": 6,
+    "rows_out": 6,
+    "detail": "13 checks passed",
+    "status": "success",
+    "duration_s": 0.0
+   },
+   {
+    "name": "load",
+    "rows_in": 6,
+    "rows_out": 6,
+    "detail": "warehouse now 48 rows",
+    "status": "success",
+    "duration_s": 0.01
+   },
+   {
+    "name": "publish",
+    "detail": "6 city snapshots exported",
+    "status": "success",
+    "duration_s": 0.01
+   }
+  ],
+  "dq": [
+   {
+    "check": "row_count",
+    "passed": true,
+    "detail": "6 rows, expected 6"
+   },
+   {
+    "check": "not_null:temp_c",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:feels_like_c",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:humidity_pct",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:precip_mm",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:wind_kmh",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:condition",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "range:temp_c",
+    "passed": true,
+    "detail": "valid -20..60"
+   },
+   {
+    "check": "range:humidity_pct",
+    "passed": true,
+    "detail": "valid 0..100"
+   },
+   {
+    "check": "range:wind_kmh",
+    "passed": true,
+    "detail": "valid 0..200"
+   },
+   {
+    "check": "range:precip_mm",
+    "passed": true,
+    "detail": "valid 0..500"
+   },
+   {
+    "check": "unique_key",
+    "passed": true,
+    "detail": "city + observed_at is unique"
+   },
+   {
+    "check": "freshness",
+    "passed": true,
+    "detail": "newest reading is 3 min old"
+   }
+  ],
+  "error": null,
+  "fact_rows": 48,
+  "rows_loaded": 6,
+  "status": "success",
+  "finished_at": "2026-10-22T17:03:44+00:00",
+  "duration_s": 1.44
  }
 ]
