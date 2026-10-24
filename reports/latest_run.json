@@ -1,16 +1,16 @@
 {
- "run_id": "40102502530",
- "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/40102502530",
+ "run_id": "40118920763",
+ "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/40118920763",
  "trigger": "schedule",
  "fault_injected": "",
- "started_at": "2026-10-24T14:26:33+00:00",
+ "started_at": "2026-10-24T18:03:17+00:00",
  "stages": [
   {
    "name": "extract",
    "rows_out": 6,
    "detail": "6 API calls",
    "status": "success",
-   "duration_s": 2.65
+   "duration_s": 3.02
   },
   {
    "name": "transform",
@@ -31,7 +31,7 @@
    "name": "load",
    "rows_in": 6,
    "rows_out": 6,
-   "detail": "warehouse now 114 rows",
+   "detail": "warehouse now 120 rows",
    "status": "success",
    "duration_s": 0.0
   },
@@ -106,13 +106,13 @@
   {
    "check": "freshness",
    "passed": true,
-   "detail": "newest reading is 11 min old"
+   "detail": "newest reading is 3 min old"
   }
  ],
  "error": null,
- "fact_rows": 114,
+ "fact_rows": 120,
  "rows_loaded": 6,
  "status": "success",
- "finished_at": "2026-10-24T14:26:36+00:00",
- "duration_s": 2.65
+ "finished_at": "2026-10-24T18:03:20+00:00",
+ "duration_s": 3.02
 }
