@@ -26,7 +26,7 @@ def condition(code):
     return "Unknown"
 
 
-def comfort(f):
+def comfort(f):demo
     if f is None: return None
     return "Cool" if f < 18 else "Pleasant" if f < 27 else "Warm" if f < 33 else "Hot" if f < 40 else "Extreme"
 
