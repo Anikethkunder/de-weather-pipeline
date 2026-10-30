@@ -11,8 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DB = ROOT / "warehouse" / "weather.db"
 REP = ROOT / "reports"
-'''API = ("https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&timezone=UTC"
-       "&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,wind_speed_10m,weather_code")'''
+API = ("https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&timezone=UTC"
+       "&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,wind_speed_10m,weather_code")
 FAULT = os.getenv("INJECT_FAULT", "none")
 MOCK = os.getenv("MOCK") == "1"
 utcnow = lambda: datetime.now(timezone.utc)
