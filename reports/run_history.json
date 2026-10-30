@@ -5780,5 +5780,41 @@
   "status": "success",
   "finished_at": "2026-10-30T04:23:24+00:00",
   "duration_s": 1.97
+ },
+ {
+  "run_id": "41003198613",
+  "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/41003198613",
+  "trigger": "workflow_dispatch",
+  "fault_injected": "none",
+  "started_at": "2026-10-30T04:29:49+00:00",
+  "stages": [
+   {
+    "name": "extract",
+    "status": "failed",
+    "detail": "API failed for Mangaluru: name 'API' is not defined",
+    "duration_s": 12.0
+   },
+   {
+    "name": "transform",
+    "status": "skipped"
+   },
+   {
+    "name": "quality",
+    "status": "skipped"
+   },
+   {
+    "name": "load",
+    "status": "skipped"
+   },
+   {
+    "name": "publish",
+    "status": "skipped"
+   }
+  ],
+  "dq": [],
+  "error": "extract: API failed for Mangaluru: name 'API' is not defined",
+  "status": "failed",
+  "finished_at": "2026-10-30T04:30:01+00:00",
+  "duration_s": 12.0
  }
 ]
