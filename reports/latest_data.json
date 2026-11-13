@@ -1,71 +1,71 @@
 {
- "generated_at": "2026-11-13T09:52:48+00:00",
+ "generated_at": "2026-11-13T17:58:35+00:00",
  "cities": [
   {
    "city": "Bengaluru",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 28.9,
-   "feels_like_c": 27.7,
-   "humidity_pct": 35.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 21.1,
+   "feels_like_c": 22.3,
+   "humidity_pct": 83.0,
    "precip_mm": 0.0,
-   "wind_kmh": 12.2,
+   "wind_kmh": 11.5,
    "condition": "Overcast",
-   "comfort": "Warm"
+   "comfort": "Pleasant"
   },
   {
    "city": "Chennai",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 29.4,
-   "feels_like_c": 31.3,
-   "humidity_pct": 63.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 26.9,
+   "feels_like_c": 30.2,
+   "humidity_pct": 76.0,
    "precip_mm": 0.0,
-   "wind_kmh": 18.4,
-   "condition": "Overcast",
+   "wind_kmh": 12.4,
+   "condition": "Partly cloudy",
    "comfort": "Warm"
   },
   {
    "city": "Delhi",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 28.6,
-   "feels_like_c": 30.3,
-   "humidity_pct": 47.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 22.2,
+   "feels_like_c": 23.6,
+   "humidity_pct": 68.0,
    "precip_mm": 0.0,
-   "wind_kmh": 2.6,
+   "wind_kmh": 4.6,
    "condition": "Overcast",
-   "comfort": "Warm"
+   "comfort": "Pleasant"
   },
   {
    "city": "Hyderabad",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 30.0,
-   "feels_like_c": 28.6,
-   "humidity_pct": 27.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 23.0,
+   "feels_like_c": 22.9,
+   "humidity_pct": 53.0,
    "precip_mm": 0.0,
-   "wind_kmh": 8.0,
-   "condition": "Overcast",
-   "comfort": "Warm"
+   "wind_kmh": 6.5,
+   "condition": "Partly cloudy",
+   "comfort": "Pleasant"
   },
   {
    "city": "Mangaluru",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 32.6,
-   "feels_like_c": 32.4,
-   "humidity_pct": 33.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 24.2,
+   "feels_like_c": 27.1,
+   "humidity_pct": 73.0,
    "precip_mm": 0.0,
-   "wind_kmh": 11.5,
+   "wind_kmh": 3.6,
    "condition": "Overcast",
    "comfort": "Warm"
   },
   {
    "city": "Mumbai",
-   "observed_at": "2026-11-13T09:45Z",
-   "temp_c": 33.1,
-   "feels_like_c": 33.5,
-   "humidity_pct": 36.0,
+   "observed_at": "2026-11-13T17:45Z",
+   "temp_c": 27.7,
+   "feels_like_c": 27.9,
+   "humidity_pct": 44.0,
    "precip_mm": 0.0,
-   "wind_kmh": 11.0,
+   "wind_kmh": 7.9,
    "condition": "Clear",
-   "comfort": "Hot"
+   "comfort": "Warm"
   }
  ]
 }
