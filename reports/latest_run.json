@@ -1,15 +1,15 @@
 {
- "run_id": "43568597273",
- "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/43568597273",
+ "run_id": "43604760173",
+ "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/43604760173",
  "trigger": "schedule",
  "fault_injected": "",
- "started_at": "2026-11-14T06:54:48+00:00",
+ "started_at": "2026-11-14T14:25:17+00:00",
  "stages": [
   {
    "name": "extract",
    "status": "failed",
    "detail": "API failed for Mangaluru: <urlopen error _ssl.c:994: The handshake operation timed out>",
-   "duration_s": 57.14
+   "duration_s": 57.2
   },
   {
    "name": "transform",
@@ -31,6 +31,6 @@
  "dq": [],
  "error": "extract: API failed for Mangaluru: <urlopen error _ssl.c:994: The handshake operation timed out>",
  "status": "failed",
- "finished_at": "2026-11-14T06:55:46+00:00",
- "duration_s": 57.14
+ "finished_at": "2026-11-14T14:26:14+00:00",
+ "duration_s": 57.2
 }
