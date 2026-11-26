@@ -1,123 +1,5 @@
 [
  {
-  "run_id": "40915678714",
-  "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/40915678714",
-  "trigger": "schedule",
-  "fault_injected": "",
-  "started_at": "2026-10-29T16:51:39+00:00",
-  "stages": [
-   {
-    "name": "extract",
-    "rows_out": 6,
-    "detail": "6 API calls",
-    "status": "success",
-    "duration_s": 2.77
-   },
-   {
-    "name": "transform",
-    "rows_in": 6,
-    "rows_out": 6,
-    "status": "success",
-    "duration_s": 0.0
-   },
-   {
-    "name": "quality",
-    "rows_in": 6,
-    "rows_out": 6,
-    "detail": "13 checks passed",
-    "status": "success",
-    "duration_s": 0.0
-   },
-   {
-    "name": "load",
-    "rows_in": 6,
-    "rows_out": 6,
-    "detail": "warehouse now 270 rows",
-    "status": "success",
-    "duration_s": 0.0
-   },
-   {
-    "name": "publish",
-    "detail": "6 city snapshots exported",
-    "status": "success",
-    "duration_s": 0.0
-   }
-  ],
-  "dq": [
-   {
-    "check": "row_count",
-    "passed": true,
-    "detail": "6 rows, expected 6"
-   },
-   {
-    "check": "not_null:temp_c",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "not_null:feels_like_c",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "not_null:humidity_pct",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "not_null:precip_mm",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "not_null:wind_kmh",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "not_null:condition",
-    "passed": true,
-    "detail": "0 null value(s)"
-   },
-   {
-    "check": "range:temp_c",
-    "passed": true,
-    "detail": "valid -20..60"
-   },
-   {
-    "check": "range:humidity_pct",
-    "passed": true,
-    "detail": "valid 0..100"
-   },
-   {
-    "check": "range:wind_kmh",
-    "passed": true,
-    "detail": "valid 0..200"
-   },
-   {
-    "check": "range:precip_mm",
-    "passed": true,
-    "detail": "valid 0..500"
-   },
-   {
-    "check": "unique_key",
-    "passed": true,
-    "detail": "city + observed_at is unique"
-   },
-   {
-    "check": "freshness",
-    "passed": true,
-    "detail": "newest reading is 6 min old"
-   }
-  ],
-  "error": null,
-  "fact_rows": 270,
-  "rows_loaded": 6,
-  "status": "success",
-  "finished_at": "2026-10-29T16:51:41+00:00",
-  "duration_s": 2.77
- },
- {
   "run_id": "40960342705",
   "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/40960342705",
   "trigger": "schedule",
@@ -10896,5 +10778,123 @@
   "status": "success",
   "finished_at": "2026-11-26T13:01:29+00:00",
   "duration_s": 1.23
+ },
+ {
+  "run_id": "45905210595",
+  "run_url": "https://github.com/Anikethkunder/de-weather-pipeline/actions/runs/45905210595",
+  "trigger": "schedule",
+  "fault_injected": "",
+  "started_at": "2026-11-26T22:30:30+00:00",
+  "stages": [
+   {
+    "name": "extract",
+    "rows_out": 6,
+    "detail": "6 API calls",
+    "status": "success",
+    "duration_s": 0.62
+   },
+   {
+    "name": "transform",
+    "rows_in": 6,
+    "rows_out": 6,
+    "status": "success",
+    "duration_s": 0.0
+   },
+   {
+    "name": "quality",
+    "rows_in": 6,
+    "rows_out": 6,
+    "detail": "13 checks passed",
+    "status": "success",
+    "duration_s": 0.0
+   },
+   {
+    "name": "load",
+    "rows_in": 6,
+    "rows_out": 6,
+    "detail": "warehouse now 804 rows",
+    "status": "success",
+    "duration_s": 0.0
+   },
+   {
+    "name": "publish",
+    "detail": "6 city snapshots exported",
+    "status": "success",
+    "duration_s": 0.0
+   }
+  ],
+  "dq": [
+   {
+    "check": "row_count",
+    "passed": true,
+    "detail": "6 rows, expected 6"
+   },
+   {
+    "check": "not_null:temp_c",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:feels_like_c",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:humidity_pct",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:precip_mm",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:wind_kmh",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "not_null:condition",
+    "passed": true,
+    "detail": "0 null value(s)"
+   },
+   {
+    "check": "range:temp_c",
+    "passed": true,
+    "detail": "valid -20..60"
+   },
+   {
+    "check": "range:humidity_pct",
+    "passed": true,
+    "detail": "valid 0..100"
+   },
+   {
+    "check": "range:wind_kmh",
+    "passed": true,
+    "detail": "valid 0..200"
+   },
+   {
+    "check": "range:precip_mm",
+    "passed": true,
+    "detail": "valid 0..500"
+   },
+   {
+    "check": "unique_key",
+    "passed": true,
+    "detail": "city + observed_at is unique"
+   },
+   {
+    "check": "freshness",
+    "passed": true,
+    "detail": "newest reading is 0 min old"
+   }
+  ],
+  "error": null,
+  "fact_rows": 804,
+  "rows_loaded": 6,
+  "status": "success",
+  "finished_at": "2026-11-26T22:30:31+00:00",
+  "duration_s": 0.62
  }
 ]
